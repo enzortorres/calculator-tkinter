@@ -83,7 +83,7 @@ button_3 = Button(frame_button, text=3, command=lambda: add_number(conta_text, 3
                     height=4, width=9, bg="white") 
 button_3.grid(row=3, column=2, sticky="n")
 
-button_0 = Button(frame_button, text=0, command=lambda: add_number(conta_text, 3),
+button_0 = Button(frame_button, text=0, command=lambda: add_number(conta_text, 0),
                     height=4, width=20, bg="white")
 button_0.grid(row=4, column=0, columnspan=2, sticky="n")
 

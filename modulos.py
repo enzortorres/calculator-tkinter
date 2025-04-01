@@ -8,19 +8,19 @@ def remove(label):
 
 def divide(label):
     texto_atual = label.cget("text")
-    label.config(text=texto_atual + " / ")
+    label.config(text=texto_atual + "/")
 
 def multiplica(label):
     texto_atual = label.cget("text")
-    label.config(text=texto_atual + " * ")
+    label.config(text=texto_atual + "*")
 
 def subtracao(label):
     texto_atual = label.cget("text")
-    label.config(text=texto_atual + " - ")
+    label.config(text=texto_atual + "-")
     
 def soma(label):
     texto_atual = label.cget("text")
-    label.config(text=texto_atual + " + ")
+    label.config(text=texto_atual + "+")
 
 def add_number(label, number):
     texto_atual = label.cget("text")
