@@ -15,7 +15,7 @@ conta_text = Label(
     frame_display, text="0", font="Arial 20",
     bg="black", fg="white", justify="right", anchor="e"
 )
-conta_text.pack(fill="both", pady=40)
+conta_text.pack(fill="both", pady=40, padx=5)
 
 frame_button = Frame(tk, bg="#CECECE", width=300, height=300)
 frame_button.grid(row=1,column=0, pady=5)
@@ -84,11 +84,16 @@ button_3 = Button(frame_button, text=3, command=lambda: add_number(conta_text, 3
 button_3.grid(row=3, column=2, sticky="n")
 
 button_0 = Button(frame_button, text=0, command=lambda: add_number(conta_text, 3),
+                    height=4, width=20, bg="white")
+button_0.grid(row=4, column=0, columnspan=2, sticky="n")
+
+button_virgula = Button(frame_button, text=".", command=lambda: add_number(conta_text, "."),
                     height=4, width=9, bg="white")
+button_virgula.grid(row=4, column=2, sticky="n")
 
 button_result = Button(frame_button, text="=", command= lambda: result(conta_text), 
-                    height= 9, width=9, bg="orange")
-button_result.grid(row=3, column=3)
+                    height=9, width=9, bg="orange")
+button_result.grid(row=3, column=3, rowspan=2)
 
 
 tk.mainloop()
